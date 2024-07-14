@@ -3,6 +3,12 @@
 
 Bu proje, Vue.js ve Vuex kullanarak geliştirilmiş bir At Yarışı uygulamasıdır. Uygulama, rastgele oluşturulan atlar ve yarış programları ile birden fazla turdan oluşan yarışlar düzenlemenize olanak tanır. Ayrıca, yarış sonuçlarını ve atların performanslarını takip edebilirsiniz.
 
+## Uygulama Videosu 
+
+Uygulamanın çalışır hali, güncel çalıştırılan makine üstünde bir video çekilmiştir.
+
+[Uygulama Videosu](https://www.youtube.com/watch?v=U9o_o5wVsD0)
+
 ## Kurulum ve Başlatma
 
 ### Gereksinimler
@@ -140,8 +146,3 @@ Snapshots:   0 total
 Time:        3.415 s
 ```
 
-## Uygulama Videosu 
-
-Uygulamanın gösteriminde ekran çözünürlüğünden kaynaklı bir problem çıkabilmesi göz önünde bulundurularak, güncel çalışan makine üstünde bir video çekilmiştir.
-
-(Uygulama Videosu)[https]
