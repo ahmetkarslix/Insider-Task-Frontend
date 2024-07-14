@@ -185,6 +185,16 @@ const store = createStore({
         }
         commit(MUTATIONS.START_RACE);
         await dispatch(ACTIONS.RUN_RACE);
+        commit(MUTATIONS.PAUSE_RACE);
+
+        if (state.currentLapIndex < state.laps.length - 1) {
+          commit(MUTATIONS.DECREASE_CONDITIONS);
+          commit(MUTATIONS.INCREASE_CONDITIONS);
+          commit(MUTATIONS.NEXT_LAP);
+          commit(MUTATIONS.SET_SELECTED_HORSES, state.program[state.currentLapIndex]);
+          commit(MUTATIONS.START_RACE);
+          await dispatch(ACTIONS.RUN_RACE);
+        }
       }
     },
     [ACTIONS.RUN_RACE]({ state, commit }) {
